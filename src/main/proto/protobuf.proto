@@ -35,7 +35,7 @@ message FuncionarioRequest {
     string cep = 2;
     string complemento = 3;
   }
-  repeated Endereco endereco = 7; //repeated: indica que é uma lista
+  repeated Endereco endereco = 7; //repeated: litsa - tipo de campo que pode se repetir 
 }
 
 message FuncionarioResponse {
