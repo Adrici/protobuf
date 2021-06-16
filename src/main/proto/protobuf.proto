@@ -3,7 +3,7 @@ syntax = "proto3"; //versão mais recente indicada pela google
 //Diretrizes
 option java_multiple_files = true; //Gerar arquivos separados
 option java_package = "br.com.zup"; //Pacote onde será gerado as classes
-option java_outer_classname = "FuncionarioServiceOuterClass"; //Classe que guardará todos os metadados quando o "java_multiple_files" for false
+option java_outer_classname = "FuncionarioServiceOuterClass"; //Classe para guardar todos os metadados quando o "java_multiple_files" for false
 
 //pacote onde as classes serão geradas
 package br.com.zup;
@@ -35,7 +35,7 @@ message FuncionarioRequest {
     string cep = 2;
     string complemento = 3;
   }
-  repeated Endereco endereco = 7; //repeated: litsa - tipo de campo que pode se repetir 
+  repeated Endereco endereco = 7; //repeated: litsa - tipo de campo que pode se repetir
 }
 
 message FuncionarioResponse {
