@@ -29,7 +29,7 @@ class FuncionarioEndpoint : FuncionarioServiceGrpc.FuncionarioServiceImplBase() 
 
         //verifica se um campo foi preenchido
         if(!request.hasField(FuncionarioRequest.getDescriptor().findFieldByName("nome"))){
-            nome = "[Não preenchido]"
+            nome = "[???]"
         }
 
         val instant = LocalDateTime.now().atZone(ZoneId.of("UTC")).toInstant()
